@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tiger Robotics — Engineering the Future</title>
-  <meta name="description" content="Tiger Robotics — Kazakhstan's first integrated robotics ecosystem. Autonomous platforms, AI manipulators, educational kits, and intelligent software.">
-  <meta name="keywords" content="robotics, Kazakhstan, AI, autonomous robots, manipulator, education, Central Asia">
-  <meta property="og:title" content="Tiger Robotics — Engineering the Future">
-  <meta property="og:description" content="Kazakhstan's first integrated robotics ecosystem.">
+  <title>Tiger Robotics — разработка ПО и обучение искусственному интеллекту</title>
+  <meta name="description" content="ТОО «Тайгер Роботикс», Алматы: заказная разработка программного обеспечения и систем искусственного интеллекта, практическое обучение ИИ и анализу данных.">
+  <meta name="keywords" content="разработка ПО, искусственный интеллект, обучение ИИ, анализ данных, Алматы, Казахстан">
+  <meta property="og:title" content="Tiger Robotics — разработка ПО и обучение ИИ">
+  <meta property="og:description" content="Заказная разработка ПО и систем ИИ, практическое обучение ИИ. Алматы.">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐯</text></svg>">
+  <style>
+    .team-grid.two { grid-template-columns: repeat(2, minmax(0, 300px)); justify-content: center; }
+    .company-line { font-size: .8rem; color: var(--text-dim); margin-top: 8px; }
+    @media (max-width: 480px) { .team-grid.two { grid-template-columns: 1fr; } }
+  </style>
 </head>
 <body>
 
@@ -19,12 +24,12 @@
   <div class="container nav-inner">
     <a href="#" class="nav-logo"><span class="dot"></span> Tiger Robotics</a>
     <ul class="nav-links" id="nav-links">
-      <li><a href="#products">Products</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#team">Team</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#products">Направления</a></li>
+      <li><a href="#about">О компании</a></li>
+      <li><a href="#team">Команда</a></li>
+      <li><a href="#contact">Контакты</a></li>
     </ul>
-    <a href="#contact" class="nav-cta">Get in Touch</a>
+    <a href="#contact" class="nav-cta">Связаться</a>
     <button class="menu-toggle" id="menu-toggle">☰</button>
   </div>
 </nav>
@@ -34,96 +39,68 @@
   <div class="hero-bg"><canvas id="hero-canvas"></canvas></div>
   <div class="container hero-inner">
     <div class="hero-content">
-      <div class="hero-tag"><span class="pulse"></span> Based in Astana, Kazakhstan</div>
-      <h1>Engineering<br>the <span class="gradient">Future</span></h1>
-      <p class="hero-desc">Building Central Asia's first integrated robotics ecosystem — from autonomous platforms and AI-powered manipulators to educational kits that inspire the next generation.</p>
+      <div class="hero-tag"><span class="pulse"></span> Алматы, Казахстан</div>
+      <h1>Прикладной<br><span class="gradient">искусственный интеллект</span></h1>
+      <p class="hero-desc">Разрабатываем программное обеспечение и системы ИИ на заказ и проводим практическое обучение искусственному интеллекту и анализу данных для команд и специалистов.</p>
       <div class="hero-btns">
-        <a href="#products" class="btn-primary">View Products</a>
-        <a href="#contact" class="btn-secondary">Contact Us</a>
+        <a href="#products" class="btn-primary">Направления</a>
+        <a href="#contact" class="btn-secondary">Связаться</a>
       </div>
       <div class="hero-stats">
         <div class="hero-stat">
-          <h3><span data-count="4" data-suffix="">0</span></h3>
-          <p>Product Lines</p>
+          <h3><span data-count="2" data-suffix="">0</span></h3>
+          <p>направления: разработка и обучение</p>
         </div>
         <div class="hero-stat">
-          <h3><span data-count="5" data-suffix="">0</span></h3>
-          <p>Team Members</p>
+          <h3><span data-count="3" data-suffix="">0</span></h3>
+          <p>патента РК — соавторство основателя</p>
         </div>
         <div class="hero-stat">
           <h3><span data-count="2026" data-suffix="">0</span></h3>
-          <p>Founded</p>
+          <p>год основания</p>
         </div>
       </div>
     </div>
     <div class="hero-image">
-      <img src="assets/images/hero-robot.png" alt="Tiger Robotics autonomous robot" loading="eager">
+      <img src="assets/images/hero-robot.png" alt="Иллюстрация: робототехника и искусственный интеллект" loading="eager">
     </div>
   </div>
 </section>
 
-<!-- ====== PRODUCTS ====== -->
+<!-- ====== НАПРАВЛЕНИЯ ====== -->
 <section class="products" id="products">
   <div class="container">
     <div class="products-header reveal">
-      <span class="section-label">Our Products</span>
-      <h2 class="section-title">Four pillars of <span class="accent">innovation</span></h2>
-      <p class="section-desc">A complete robotics ecosystem — hardware, software, and education — designed and built in Kazakhstan.</p>
+      <span class="section-label">Направления</span>
+      <h2 class="section-title">Что мы <span class="accent">делаем</span></h2>
+      <p class="section-desc">Два направления компании: заказная разработка программного обеспечения и обучение в сфере ИКТ.</p>
     </div>
     <div class="products-grid">
 
       <div class="product-card reveal reveal-delay-1">
-        <img class="product-card-img" src="assets/images/tiger-platform.png" alt="TIGER Platform">
+        <img class="product-card-img" src="assets/images/bars-ai.png" alt="Разработка программного обеспечения">
         <div class="product-card-body">
-          <span class="product-badge badge-platform">Autonomous</span>
-          <h3>TIGER Platform</h3>
-          <p>Autonomous mobile robot with LiDAR navigation, ROS2 integration, and modular payload system for industrial and research applications.</p>
+          <span class="product-badge badge-software">Tiger Dev</span>
+          <h3>Разработка ПО на заказ</h3>
+          <p>Веб-платформы и корпоративные сервисы, мобильные приложения, интеграция ИИ в процессы компании: ассистенты, базы знаний с поиском по документам, автоматизация. Системы анализа данных и мониторинга оборудования. Полный цикл: от технического задания до сопровождения.</p>
           <div class="product-specs">
-            <span>ROS2 Native</span>
-            <span>LiDAR + SLAM</span>
-            <span>Modular</span>
+            <span>Веб и мобильные приложения</span>
+            <span>LLM и базы знаний</span>
+            <span>Данные и IoT</span>
           </div>
         </div>
       </div>
 
       <div class="product-card reveal reveal-delay-2">
-        <img class="product-card-img" src="assets/images/mk2-arm.png" alt="MK2 ARM">
+        <img class="product-card-img" src="assets/images/cub-kit.png" alt="Обучение искусственному интеллекту">
         <div class="product-card-body">
-          <span class="product-badge badge-arm">Manipulator</span>
-          <h3>MK2 ARM</h3>
-          <p>AI-powered robotic manipulator with computer vision, real-time object detection, and precision control for pick-and-place automation.</p>
+          <span class="product-badge badge-edu">Tiger AI Academy</span>
+          <h3>Обучение ИИ и анализу данных</h3>
+          <p>Корпоративные программы на 20–40 академических часов, открытые курсы по анализу данных и машинному обучению на Python, выездные семинары. Практика на задачах слушателей, итоговая аттестация и сертификат.</p>
           <div class="product-specs">
-            <span>3-DOF</span>
-            <span>Computer Vision</span>
-            <span>AI Control</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card reveal reveal-delay-3">
-        <img class="product-card-img" src="assets/images/cub-kit.png" alt="CUB Kit">
-        <div class="product-card-body">
-          <span class="product-badge badge-edu">Education</span>
-          <h3>CUB Kit</h3>
-          <p>All-in-one educational robotics kit for schools and universities. Hands-on learning in electronics, programming, and AI fundamentals.</p>
-          <div class="product-specs">
-            <span>K-12 Aligned</span>
-            <span>Bilingual Docs</span>
-            <span>Arduino + Python</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card reveal reveal-delay-4">
-        <img class="product-card-img" src="assets/images/bars-ai.png" alt="BARS AI">
-        <div class="product-card-body">
-          <span class="product-badge badge-software">Software</span>
-          <h3>BARS AI</h3>
-          <p>Intelligent software suite for fleet management, predictive maintenance, and autonomous decision-making across all Tiger Robotics hardware.</p>
-          <div class="product-specs">
-            <span>Fleet Management</span>
-            <span>ML Pipeline</span>
-            <span>Cloud Dashboard</span>
+            <span>20–48 ак. часов</span>
+            <span>Практика на ваших задачах</span>
+            <span>RU / KZ</span>
           </div>
         </div>
       </div>
@@ -132,7 +109,7 @@
   </div>
 </section>
 
-<!-- ====== ABOUT ====== -->
+<!-- ====== О КОМПАНИИ ====== -->
 <section class="about" id="about">
   <div class="container about-inner">
     <div class="about-visual reveal">
@@ -145,29 +122,29 @@
       </div>
     </div>
     <div class="about-content">
-      <span class="section-label reveal">About Us</span>
-      <h2 class="section-title reveal">Born in Kazakhstan,<br>built for the <span class="accent">world</span></h2>
-      <p class="section-desc reveal">Tiger Robotics is the first integrated robotics ecosystem in Central Asia. We design, manufacture, and deploy autonomous systems — bridging the gap between cutting-edge AI research and real-world industrial applications.</p>
+      <span class="section-label reveal">О компании</span>
+      <h2 class="section-title reveal">Инженерная компания<br>в области <span class="accent">ИИ и данных</span></h2>
+      <p class="section-desc reveal">ТОО «Тайгер Роботикс» основано в 2026 году в Алматы. Соединяем прикладную разработку с машинным обучением, анализом данных и промышленным интернетом вещей.</p>
       <div class="about-features">
         <div class="about-feature reveal reveal-delay-1">
           <div class="about-feature-icon">🚀</div>
           <div>
-            <h4>Astana Hub Resident</h4>
-            <p>Operating within Kazakhstan's premier tech ecosystem with full government-backed support.</p>
+            <h4>Farabi Tech Hub</h4>
+            <p>Участник инкубационной программы Farabi Tech Hub (2026).</p>
           </div>
         </div>
         <div class="about-feature reveal reveal-delay-2">
           <div class="about-feature-icon">🔬</div>
           <div>
-            <h4>Research-Driven</h4>
-            <p>Deep roots in academic R&D with publications in AI, computer vision, and control systems.</p>
+            <h4>Исследовательская база</h4>
+            <p>Основатель — соавтор патентов РК и публикаций Scopus в области цифровых двойников и промышленного IoT.</p>
           </div>
         </div>
         <div class="about-feature reveal reveal-delay-3">
-          <div class="about-feature-icon">🌍</div>
+          <div class="about-feature-icon">🇰🇿</div>
           <div>
-            <h4>Global Ambition</h4>
-            <p>Building the "Made in Kazakhstan" brand for robotics — targeting CIS, Middle East, and beyond.</p>
+            <h4>Данные в Казахстане</h4>
+            <p>Решения размещаем на серверах в Казахстане, обучаем на казахском и русском языках.</p>
           </div>
         </div>
       </div>
@@ -175,74 +152,64 @@
   </div>
 </section>
 
-<!-- ====== TEAM ====== -->
+<!-- ====== КОМАНДА ====== -->
 <section class="team" id="team">
   <div class="container">
     <div class="team-header reveal">
-      <span class="section-label">Our Team</span>
-      <h2 class="section-title">The minds behind <span class="accent">Tiger</span></h2>
-      <p class="section-desc">A multidisciplinary team of engineers, researchers, and strategists united by a mission to put Kazakhstan on the global robotics map.</p>
+      <span class="section-label">Команда</span>
+      <h2 class="section-title">Кто за этим <span class="accent">стоит</span></h2>
+      <p class="section-desc">Небольшая инженерная команда, которая растёт вместе с проектами.</p>
     </div>
-    <div class="team-grid">
+    <div class="team-grid two">
 
       <div class="team-card reveal reveal-delay-1">
         <div class="team-avatar">👤</div>
-        <h4>Nazar Abdulkhamit</h4>
-        <p class="role">CEO & Founder</p>
-        <p class="bio">Vision, strategy & product architecture</p>
+        <h4>Назар Абдулхамит</h4>
+        <p class="role">Основатель, директор</p>
+        <p class="bio">Бакалавр ИКТ, «Наука о данных», КазНУ им. аль-Фараби. ИИ, данные, преподавание</p>
       </div>
 
       <div class="team-card reveal reveal-delay-2">
-        <div class="team-avatar">👤</div>
-        <h4>CTO</h4>
-        <p class="role">Chief Technology Officer</p>
-        <p class="bio">System design & embedded engineering</p>
-      </div>
-
-      <div class="team-card reveal reveal-delay-3">
-        <div class="team-avatar">👤</div>
-        <h4>ML Engineer</h4>
-        <p class="role">Machine Learning</p>
-        <p class="bio">Computer vision & AI pipelines</p>
-      </div>
-
-      <div class="team-card reveal reveal-delay-4">
-        <div class="team-avatar">👤</div>
-        <h4>Embedded Dev</h4>
-        <p class="role">Firmware Engineering</p>
-        <p class="bio">ESP32, ROS2 & real-time control</p>
-      </div>
-
-      <div class="team-card reveal reveal-delay-4">
-        <div class="team-avatar">👤</div>
-        <h4>Business Dev</h4>
-        <p class="role">Business Development</p>
-        <p class="bio">Partnerships, grants & go-to-market</p>
+        <div class="team-avatar">➕</div>
+        <h4>Мы нанимаем</h4>
+        <p class="role">Разработчики и ML-инженеры</p>
+        <p class="bio">Пишите на почту или звоните — расскажем о задачах</p>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- ====== CONTACT ====== -->
+<!-- ====== КОНТАКТЫ ====== -->
 <section class="contact" id="contact">
   <div class="container contact-inner">
-    <span class="section-label reveal">Contact</span>
-    <h2 class="section-title reveal">Let's build the <span class="accent">future</span> together</h2>
-    <p class="section-desc reveal">Whether you're an investor, partner, or fellow builder — we'd love to hear from you.</p>
+    <span class="section-label reveal">Контакты</span>
+    <h2 class="section-title reveal">Обсудим <span class="accent">вашу задачу</span></h2>
+    <p class="section-desc reveal">г. Алматы, пр. аль-Фараби, 71, корпус 20, офис S15</p>
     <div class="contact-links reveal">
+      <a href="tel:+77078630705" class="contact-link"><span class="icon">📞</span> +7 707 863 07 05</a>
       <a href="mailto:info@tigerrobotics.kz" class="contact-link"><span class="icon">📧</span> info@tigerrobotics.kz</a>
-      <a href="https://t.me/tigerrobotics" target="_blank" class="contact-link"><span class="icon">✈️</span> @tigerrobotics</a>
-      <a href="https://github.com/tiger-robotics" target="_blank" class="contact-link"><span class="icon">💻</span> GitHub</a>
     </div>
-    <a href="mailto:info@tigerrobotics.kz" class="contact-cta reveal">Start a Conversation →</a>
+    <a href="mailto:info@tigerrobotics.kz" class="contact-cta reveal">Написать нам →</a>
   </div>
 </section>
+
+<!--
+  ОПЦИОНАЛЬНО, только по решению Назара: предупреждение о мошенниках (инцидент 14.09.2026).
+  Чтобы включить — убрать эти строки комментария вокруг блока <section>.
+
+<section class="contact" id="warning">
+  <div class="container contact-inner">
+    <span class="section-label">Внимание</span>
+    <p class="section-desc">Неизвестные лица используют наименование и БИН ТОО «Тайгер Роботикс» в поддельных договорах продажи компьютерной техники с предоплатой на карты Kaspi. Компания не продаёт компьютеры и не принимает оплату на карты физических лиц: все договоры подписывает директор, оплата — только на расчётный счёт ТОО. Получили такой договор — не платите, сообщите в полицию (102) и позвоните нам.</p>
+  </div>
+</section>
+-->
 
 <!-- ====== FOOTER ====== -->
 <footer class="footer">
   <div class="container">
-    <p>© 2026 Tiger Robotics. Made with 🧡 in Kazakhstan <span class="flag">🇰🇿</span></p>
+    <p>© 2026 ТОО «Тайгер Роботикс» · БИН 260440028998 · Алматы <span class="flag">🇰🇿</span></p>
   </div>
 </footer>
 
